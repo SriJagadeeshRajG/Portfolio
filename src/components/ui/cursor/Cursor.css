@@ -1,0 +1,132 @@
+/* Hide default cursor */
+
+html,
+body,
+a,
+button,
+input,
+textarea {
+  cursor: none !important;
+}
+
+/* ---------- Ring ---------- */
+
+.cursor-ring {
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  width: 46px;
+  height: 46px;
+
+  margin-left: -23px;
+  margin-top: -23px;
+
+  border: 2px solid rgba(255,255,255,0.95);
+  border-radius: 50%;
+
+  pointer-events: none;
+  z-index: 99999;
+
+  transition:
+    width .22s ease,
+    height .22s ease,
+    margin .22s ease,
+    border-color .22s ease,
+    transform .08s linear;
+
+  will-change: transform;
+
+  box-shadow: none;
+}
+
+/* ---------- Dot ---------- */
+
+.cursor-dot{
+    position:fixed;
+
+    left:0;
+    top:0;
+
+    width:9px;
+    height:9px;
+
+    margin-left:-4.5px;
+    margin-top:-4.5px;
+
+    border-radius:50%;
+
+    background:#D18A3B;
+
+    pointer-events:none;
+
+    z-index:100000;
+
+    transition:
+        transform .05s linear,
+        width .18s,
+        height .18s,
+        margin .18s,
+        background .18s;
+
+    backdrop-filter: blur(2px);
+
+    will-change:transform;
+}
+
+/* ---------- Hover ---------- */
+
+.cursor-ring.hover{
+
+    width:64px;
+    height:64px;
+
+    margin-left:-32px;
+    margin-top:-32px;
+
+    border:2px solid #D18A3B;
+
+    transform:translate3d(0,0,0) scale(1.05);
+
+}
+
+.cursor-dot.hover{
+
+    width:11px;
+    height:11px;
+
+    margin-left:-5.5px;
+    margin-top:-5.5px;
+
+    background:white;
+}
+
+/* ---------- Selection ---------- */
+
+::selection{
+
+    background:#D18A3B;
+
+    color:white;
+
+}
+
+/* ---------- Mobile ---------- */
+
+@media (pointer:coarse){
+
+.cursor-ring,
+.cursor-dot{
+
+display:none;
+
+}
+
+html,
+body{
+
+cursor:auto;
+
+}
+
+}
