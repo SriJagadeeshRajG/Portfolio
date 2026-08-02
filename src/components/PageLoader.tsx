@@ -28,11 +28,11 @@ export function PageLoader() {
           if (cancelled) return;
           acc[i] = line.slice(0, j);
           setTyped([...acc]);
-          await new Promise((r) => setTimeout(r, 12));
+          await new Promise((r) => setTimeout(r, 6));
         }
-        await new Promise((r) => setTimeout(r, 160));
+        await new Promise((r) => setTimeout(r, 80));
       }
-      await new Promise((r) => setTimeout(r, 320));
+      await new Promise((r) => setTimeout(r, 120));
       if (!cancelled) setDone(true);
     };
     run();

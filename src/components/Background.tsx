@@ -34,7 +34,7 @@ export function Background() {
 <div
   className="absolute inset-0 bg-cover bg-center opacity-[0.16]"
   style={{
-    backgroundImage: "url('/backgrounds/hero-bg.png')",
+    backgroundImage: "url('/backgrounds/hero-bg.webp')",
   }}
 />
 
@@ -57,7 +57,7 @@ export function Background() {
         style={{
           background:
             "radial-gradient(circle, rgba(209,138,59,.14) 0%, rgba(209,138,59,.07) 35%, transparent 72%)",
-          filter: "blur(180px)",
+          filter: "blur(120px)",
         }}
       />
 
@@ -76,8 +76,8 @@ export function Background() {
         className="absolute h-[650px] w-[650px] rounded-full"
         style={{
           background:
-            "radial-gradient(circle, rgba(209,138,59,.18) 0%, rgba(209,138,59,.10) 25%, rgba(209,138,59,.05) 45%, transparent 72%)",
-          filter: "blur(120px)",
+            "radial-gradient(circle, rgba(209,138,59,.05) 0%, rgba(209,138,59,.05) 25%, rgba(209,138,59,.05) 45%, transparent 72%)",
+          filter: "blur(100px)",
         }}
       />
 
@@ -101,7 +101,7 @@ export function Background() {
         style={{
           background:
             "radial-gradient(circle, rgba(184,115,51,.20), transparent 72%)",
-          filter: "blur(150px)",
+          filter: "blur(90px)",
         }}
       />
 
@@ -125,7 +125,7 @@ export function Background() {
         style={{
           background:
             "radial-gradient(circle, rgba(110,143,133,.18), transparent 65%)",
-          filter: "blur(140px)",
+          filter: "blur(80px)",
         }}
       />
 
@@ -149,7 +149,7 @@ export function Background() {
         style={{
           background:
             "radial-gradient(circle, rgba(184,115,51,.14), transparent 70%)",
-          filter: "blur(170px)",
+          filter: "blur(70px)",
         }}
       />
 
